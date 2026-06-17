@@ -41,7 +41,7 @@ def run_edit(
     return output_image, int(used_seed)
 
 
-with gr.Blocks(title="Qwen 카메라 앵글 편집기", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="Qwen 카메라 앵글 편집기") as demo:
     gr.Markdown(
         """
         # 📷 Qwen 카메라 앵글 편집기
@@ -128,4 +128,4 @@ with gr.Blocks(title="Qwen 카메라 앵글 편집기", theme=gr.themes.Soft()) 
 
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(theme=gr.themes.Soft())
